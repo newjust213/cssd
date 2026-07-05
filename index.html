@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSSD Level-Ⅰ · 컴활 1급 4주 합격</title>
+    <script>
+      // FOUC 방지: React 마운트 전에 테마 적용
+      document.documentElement.dataset.theme =
+        localStorage.getItem('cssd-theme') ||
+        (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+    </script>
   </head>
   <body>
     <div id="root"></div>

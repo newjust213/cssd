@@ -7,7 +7,23 @@
   --accent: #4f8cff;
   --green: #2ecc71;
   --red: #e74c3c;
+  --flash-back: #1d2a45;
+  --diagram-bg: #232e45;
   color-scheme: dark;
+}
+
+:root[data-theme="light"] {
+  --bg: #f1f4f9;
+  --panel: #ffffff;
+  --panel2: #e8edf5;
+  --text: #1c2333;
+  --muted: #64708a;
+  --accent: #2f6fe0;
+  --green: #1a9e55;
+  --red: #d6452e;
+  --flash-back: #dbe5f5;
+  --diagram-bg: #1a2233; /* SVG 도해는 다크 팔레트로 그려져 있어 배경 유지 */
+  color-scheme: light;
 }
 
 * { box-sizing: border-box; }
@@ -40,6 +56,7 @@ nav button.active { background: var(--accent); color: #fff; font-weight: 600; }
 button { font-family: inherit; cursor: pointer; }
 .primary { background: var(--accent); color: #fff; border: 0; border-radius: 10px; padding: 10px 20px; font-size: 15px; }
 .ghost { background: transparent; color: var(--muted); border: 1px solid var(--muted); border-radius: 10px; padding: 8px 14px; }
+.ghost.icon { padding: 5px 9px; font-size: 15px; border-color: var(--panel2); }
 .danger { background: var(--red); color: #fff; border: 0; border-radius: 10px; padding: 10px 20px; font-size: 15px; }
 .row { display: flex; gap: 10px; margin-top: 12px; align-items: center; justify-content: center; }
 
@@ -87,7 +104,7 @@ button { font-family: inherit; cursor: pointer; }
   display: flex; flex-direction: column; justify-content: center; align-items: center;
   padding: 20px; cursor: pointer; margin: 10px 0;
 }
-.flash.back { background: #1d2a45; }
+.flash.back { background: var(--flash-back); }
 .flash pre { white-space: pre-wrap; font-family: inherit; font-size: 15px; line-height: 1.7; margin: 0; text-align: left; }
 .hint { color: var(--muted); font-size: 12px; margin-top: 10px; }
 
@@ -127,5 +144,5 @@ select {
 .points li { font-size: 14px; line-height: 1.7; padding: 3px 0; color: var(--text); }
 
 .diagram { margin: 14px 0 4px; }
-.diagram img { display: block; width: 100%; background: var(--panel2); border-radius: 10px; padding: 8px; }
+.diagram img { display: block; width: 100%; background: var(--diagram-bg); border-radius: 10px; padding: 8px; }
 .diagram figcaption { text-align: center; color: var(--muted); font-size: 12px; margin-top: 6px; }

@@ -15,10 +15,22 @@ const TABS = [
   ['proc', '손순서'],
 ]
 
+function initTheme() {
+  const saved = localStorage.getItem('cssd-theme')
+  if (saved) return saved
+  return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'
+}
+
 export default function App() {
   const [tab, setTab] = useState('plan')
   const [conceptSubject, setConceptSubject] = useState('컴퓨터 일반')
   const [user, setUser] = useState(null)
+  const [theme, setTheme] = useState(initTheme)
+
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme
+    localStorage.setItem('cssd-theme', theme)
+  }, [theme])
 
   function openConcepts(subject) {
     setConceptSubject(subject)
@@ -39,6 +51,13 @@ export default function App() {
       <header>
         <h1>CSSD <span>Level-Ⅰ</span></h1>
         <div className="auth">
+          <button
+            className="ghost icon"
+            title={theme === 'dark' ? '라이트 테마로' : '다크 테마로'}
+            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+          >
+            {theme === 'dark' ? '☀️' : '🌙'}
+          </button>
           {firebaseEnabled ? (
             user ? (
               <>
