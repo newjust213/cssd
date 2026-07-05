@@ -7,6 +7,7 @@ const GOTO_LABEL = {
   'quiz-wrong': '오답노트 →',
   cards: '암기카드 →',
   proc: '손순서 →',
+  exam: '모의고사 →',
 }
 
 export default function Plan({ onOpenConcepts, onOpenQuiz, onOpenTab }) {

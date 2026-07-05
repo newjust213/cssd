@@ -4,6 +4,7 @@ import Concepts from './modules/Concepts'
 import Quiz from './modules/Quiz'
 import Cards from './modules/Cards'
 import Procedures from './modules/Procedures'
+import Exam from './modules/Exam'
 import { firebaseEnabled, watchAuth, signIn, signOutUser } from './firebase'
 import { syncOnLogin, clearUid } from './store'
 
@@ -13,6 +14,7 @@ const TABS = [
   ['quiz', '필기 CBT'],
   ['cards', '암기카드'],
   ['proc', '손순서'],
+  ['exam', '모의고사'],
 ]
 
 function initTheme() {
@@ -95,6 +97,7 @@ export default function App() {
         {tab === 'quiz' && <Quiz key={quizNav.key} initialMode={quizNav.view} />}
         {tab === 'cards' && <Cards />}
         {tab === 'proc' && <Procedures />}
+        {tab === 'exam' && <Exam />}
       </main>
     </div>
   )

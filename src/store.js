@@ -7,6 +7,7 @@ const EMPTY = {
   quiz: {},        // { qid: { correct, wrong, last } }
   wrong: {},       // { qid: true }  오답노트
   cards: {},       // { cardId: { level, due, last } }
+  exams: [],       // [{ ts, excel, access, note }] 모의고사 기록
   updatedAt: 0,
 }
 
@@ -80,6 +81,10 @@ function mergeProgress(a, b) {
     const x = a.cards[c], y = b.cards[c]
     out.cards[c] = !x ? y : !y ? x : (x.last >= y.last ? x : y)
   }
+  // 모의고사 기록: ts 기준 합집합
+  const byTs = new Map()
+  for (const e of [...(a.exams || []), ...(b.exams || [])]) byTs.set(e.ts, e)
+  out.exams = [...byTs.values()].sort((x, y) => x.ts - y.ts)
   out.updatedAt = Math.max(a.updatedAt || 0, b.updatedAt || 0)
   return out
 }
