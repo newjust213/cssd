@@ -2,7 +2,7 @@ import plan from '../data/plan.json'
 import { useProgress } from '../useProgress'
 import { update } from '../store'
 
-export default function Plan() {
+export default function Plan({ onOpenConcepts }) {
   const progress = useProgress()
   const total = plan.reduce((n, w) => n + w.tasks.length, 0)
   const done = plan.reduce((n, w) => n + w.tasks.filter((t) => progress.plan[t.id]).length, 0)
@@ -41,6 +41,11 @@ export default function Plan() {
                     />
                     <span>{t.label}</span>
                   </label>
+                  {t.concept && (
+                    <button className="link" onClick={() => onOpenConcepts(t.concept)}>
+                      개념 보기 →
+                    </button>
+                  )}
                 </li>
               ))}
             </ul>

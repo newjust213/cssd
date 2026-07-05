@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import Plan from './modules/Plan'
+import Concepts from './modules/Concepts'
 import Quiz from './modules/Quiz'
 import Cards from './modules/Cards'
 import Procedures from './modules/Procedures'
@@ -8,6 +9,7 @@ import { syncOnLogin, clearUid } from './store'
 
 const TABS = [
   ['plan', '4주 플랜'],
+  ['concepts', '개념'],
   ['quiz', '필기 CBT'],
   ['cards', '암기카드'],
   ['proc', '손순서'],
@@ -15,7 +17,13 @@ const TABS = [
 
 export default function App() {
   const [tab, setTab] = useState('plan')
+  const [conceptSubject, setConceptSubject] = useState('컴퓨터 일반')
   const [user, setUser] = useState(null)
+
+  function openConcepts(subject) {
+    setConceptSubject(subject)
+    setTab('concepts')
+  }
 
   useEffect(() => {
     const unsub = watchAuth((u) => {
@@ -53,7 +61,8 @@ export default function App() {
         ))}
       </nav>
       <main>
-        {tab === 'plan' && <Plan />}
+        {tab === 'plan' && <Plan onOpenConcepts={openConcepts} />}
+        {tab === 'concepts' && <Concepts subject={conceptSubject} onSubjectChange={setConceptSubject} />}
         {tab === 'quiz' && <Quiz />}
         {tab === 'cards' && <Cards />}
         {tab === 'proc' && <Procedures />}
