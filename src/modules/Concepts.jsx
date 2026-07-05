@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import concepts from '../data/concepts.json'
+import Diagram from './Diagram'
 import { useProgress } from '../useProgress'
 import { update } from '../store'
 
@@ -49,10 +50,7 @@ export default function Concepts({ subject, onSubjectChange }) {
             </label>
           </summary>
           {(sec.images || []).map((im) => (
-            <figure className="diagram" key={im.file}>
-              <img src={`${import.meta.env.BASE_URL}diagrams/${im.file}`} alt={im.caption} />
-              <figcaption>{im.caption}</figcaption>
-            </figure>
+            <Diagram key={im.file} file={im.file} caption={im.caption} />
           ))}
           <ul className="points">
             {sec.points.map((pt, j) => (

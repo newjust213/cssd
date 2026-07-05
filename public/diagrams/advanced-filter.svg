@@ -1,20 +1,20 @@
 <svg viewBox="0 0 640 230" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
   <g font-size="13" text-anchor="middle">
-    <text x="165" y="30" fill="#2ecc71" font-weight="bold">같은 행 = AND</text>
-    <g fill="#31549e"><rect x="65" y="45" width="100" height="34"/><rect x="165" y="45" width="100" height="34"/></g>
-    <g fill="#e8ecf4"><text x="115" y="67">지역</text><text x="215" y="67">급여</text></g>
-    <g fill="#232e45"><rect x="65" y="79" width="100" height="34"/><rect x="165" y="79" width="100" height="34"/></g>
-    <g fill="#cdd8ee" font-family="monospace"><text x="115" y="101">서울</text><text x="215" y="101">&gt;=3000000</text></g>
-    <text x="165" y="140" fill="#8b96ab" font-size="12">지역이 "서울" 이면서 급여 300만 이상</text>
+    <text x="165" y="30" fill="var(--dg-green,#2ecc71)" font-weight="bold">같은 행 = AND</text>
+    <g fill="var(--dg-fill,#31549e)"><rect x="65" y="45" width="100" height="34"/><rect x="165" y="45" width="100" height="34"/></g>
+    <g fill="var(--dg-text,#e8ecf4)"><text x="115" y="67">지역</text><text x="215" y="67">급여</text></g>
+    <g fill="var(--dg-panel,#232e45)"><rect x="65" y="79" width="100" height="34"/><rect x="165" y="79" width="100" height="34"/></g>
+    <g fill="var(--dg-text2,#cdd8ee)" font-family="monospace"><text x="115" y="101">서울</text><text x="215" y="101">&gt;=3000000</text></g>
+    <text x="165" y="140" fill="var(--dg-muted,#8b96ab)" font-size="12">지역이 "서울" 이면서 급여 300만 이상</text>
 
-    <text x="475" y="30" fill="#e74c3c" font-weight="bold">다른 행 = OR</text>
-    <g fill="#31549e"><rect x="375" y="45" width="100" height="34"/><rect x="475" y="45" width="100" height="34"/></g>
-    <g fill="#e8ecf4"><text x="425" y="67">지역</text><text x="525" y="67">급여</text></g>
-    <g fill="#232e45"><rect x="375" y="79" width="100" height="34"/><rect x="475" y="79" width="100" height="34"/></g>
-    <g fill="#1a2233"><rect x="375" y="113" width="100" height="34"/><rect x="475" y="113" width="100" height="34"/></g>
-    <g fill="#cdd8ee" font-family="monospace"><text x="425" y="101">서울</text><text x="525" y="135">&gt;=3000000</text></g>
-    <text x="475" y="172" fill="#8b96ab" font-size="12">지역이 "서울" 이거나, (지역 무관) 급여 300만 이상</text>
+    <text x="475" y="30" fill="var(--dg-red,#e74c3c)" font-weight="bold">다른 행 = OR</text>
+    <g fill="var(--dg-fill,#31549e)"><rect x="375" y="45" width="100" height="34"/><rect x="475" y="45" width="100" height="34"/></g>
+    <g fill="var(--dg-text,#e8ecf4)"><text x="425" y="67">지역</text><text x="525" y="67">급여</text></g>
+    <g fill="var(--dg-panel,#232e45)"><rect x="375" y="79" width="100" height="34"/><rect x="475" y="79" width="100" height="34"/></g>
+    <g fill="var(--dg-panel2,#1a2233)"><rect x="375" y="113" width="100" height="34"/><rect x="475" y="113" width="100" height="34"/></g>
+    <g fill="var(--dg-text2,#cdd8ee)" font-family="monospace"><text x="425" y="101">서울</text><text x="525" y="135">&gt;=3000000</text></g>
+    <text x="475" y="172" fill="var(--dg-muted,#8b96ab)" font-size="12">지역이 "서울" 이거나, (지역 무관) 급여 300만 이상</text>
 
-    <text x="320" y="210" fill="#8b96ab" font-size="12">수식을 조건으로 쓸 때: 레이블은 비우거나 원본 필드명과 다르게 지정</text>
+    <text x="320" y="210" fill="var(--dg-muted,#8b96ab)" font-size="12">수식을 조건으로 쓸 때: 레이블은 비우거나 원본 필드명과 다르게 지정</text>
   </g>
 </svg>

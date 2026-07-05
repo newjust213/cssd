@@ -1,30 +1,30 @@
 <svg viewBox="0 0 640 310" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
   <g font-size="13" text-anchor="middle">
-    <rect x="15" y="15" width="610" height="130" rx="12" fill="#232e45"/>
-    <text x="320" y="40" fill="#2ecc71" font-weight="bold">대칭키(비밀키) — 같은 키로 암호화·복호화 · DES, AES</text>
-    <rect x="60" y="70" width="90" height="40" rx="8" fill="#31549e"/><text x="105" y="95" fill="#e8ecf4">평문</text>
-    <rect x="275" y="70" width="90" height="40" rx="8" fill="#0f1420" stroke="#3a4a6b"/><text x="320" y="95" fill="#e8ecf4">암호문</text>
-    <rect x="490" y="70" width="90" height="40" rx="8" fill="#31549e"/><text x="535" y="95" fill="#e8ecf4">평문</text>
-    <path d="M150,90 L275,90" stroke="#2ecc71" stroke-width="2" marker-end="url(#c1)"/>
-    <path d="M365,90 L490,90" stroke="#2ecc71" stroke-width="2" marker-end="url(#c1)"/>
-    <text x="212" y="80" fill="#2ecc71" font-size="12">🔑 비밀키</text>
-    <text x="427" y="80" fill="#2ecc71" font-size="12">🔑 같은 비밀키</text>
-    <text x="320" y="132" fill="#8b96ab" font-size="12">빠름 · 키 관리 부담 큼 (n명 → n(n-1)/2개)</text>
+    <rect x="15" y="15" width="610" height="130" rx="12" fill="var(--dg-panel,#232e45)"/>
+    <text x="320" y="40" fill="var(--dg-green,#2ecc71)" font-weight="bold">대칭키(비밀키) — 같은 키로 암호화·복호화 · DES, AES</text>
+    <rect x="60" y="70" width="90" height="40" rx="8" fill="var(--dg-fill,#31549e)"/><text x="105" y="95" fill="var(--dg-text,#e8ecf4)">평문</text>
+    <rect x="275" y="70" width="90" height="40" rx="8" fill="var(--dg-dark,#0f1420)" stroke="var(--dg-stroke,#3a4a6b)"/><text x="320" y="95" fill="var(--dg-text,#e8ecf4)">암호문</text>
+    <rect x="490" y="70" width="90" height="40" rx="8" fill="var(--dg-fill,#31549e)"/><text x="535" y="95" fill="var(--dg-text,#e8ecf4)">평문</text>
+    <path d="M150,90 L275,90" stroke="var(--dg-green,#2ecc71)" stroke-width="2" marker-end="url(#c1)"/>
+    <path d="M365,90 L490,90" stroke="var(--dg-green,#2ecc71)" stroke-width="2" marker-end="url(#c1)"/>
+    <text x="212" y="80" fill="var(--dg-green,#2ecc71)" font-size="12">🔑 비밀키</text>
+    <text x="427" y="80" fill="var(--dg-green,#2ecc71)" font-size="12">🔑 같은 비밀키</text>
+    <text x="320" y="132" fill="var(--dg-muted,#8b96ab)" font-size="12">빠름 · 키 관리 부담 큼 (n명 → n(n-1)/2개)</text>
 
-    <rect x="15" y="160" width="610" height="130" rx="12" fill="#232e45"/>
-    <text x="320" y="185" fill="#4f8cff" font-weight="bold">공개키(비대칭) — 암호화 키 공개, 복호화 키 비밀 · RSA</text>
-    <rect x="60" y="215" width="90" height="40" rx="8" fill="#31549e"/><text x="105" y="240" fill="#e8ecf4">평문</text>
-    <rect x="275" y="215" width="90" height="40" rx="8" fill="#0f1420" stroke="#3a4a6b"/><text x="320" y="240" fill="#e8ecf4">암호문</text>
-    <rect x="490" y="215" width="90" height="40" rx="8" fill="#31549e"/><text x="535" y="240" fill="#e8ecf4">평문</text>
-    <path d="M150,235 L275,235" stroke="#4f8cff" stroke-width="2" marker-end="url(#c2)"/>
-    <path d="M365,235 L490,235" stroke="#e74c3c" stroke-width="2" marker-end="url(#c3)"/>
-    <text x="212" y="225" fill="#4f8cff" font-size="12">공개키 (누구나)</text>
-    <text x="427" y="225" fill="#e74c3c" font-size="12">개인키 (수신자만)</text>
-    <text x="320" y="277" fill="#8b96ab" font-size="12">느림·알고리즘 복잡 · 키 관리 용이 — "DES는 대칭, RSA는 공개키" 함정 빈출</text>
+    <rect x="15" y="160" width="610" height="130" rx="12" fill="var(--dg-panel,#232e45)"/>
+    <text x="320" y="185" fill="var(--dg-accent,#4f8cff)" font-weight="bold">공개키(비대칭) — 암호화 키 공개, 복호화 키 비밀 · RSA</text>
+    <rect x="60" y="215" width="90" height="40" rx="8" fill="var(--dg-fill,#31549e)"/><text x="105" y="240" fill="var(--dg-text,#e8ecf4)">평문</text>
+    <rect x="275" y="215" width="90" height="40" rx="8" fill="var(--dg-dark,#0f1420)" stroke="var(--dg-stroke,#3a4a6b)"/><text x="320" y="240" fill="var(--dg-text,#e8ecf4)">암호문</text>
+    <rect x="490" y="215" width="90" height="40" rx="8" fill="var(--dg-fill,#31549e)"/><text x="535" y="240" fill="var(--dg-text,#e8ecf4)">평문</text>
+    <path d="M150,235 L275,235" stroke="var(--dg-accent,#4f8cff)" stroke-width="2" marker-end="url(#c2)"/>
+    <path d="M365,235 L490,235" stroke="var(--dg-red,#e74c3c)" stroke-width="2" marker-end="url(#c3)"/>
+    <text x="212" y="225" fill="var(--dg-accent,#4f8cff)" font-size="12">공개키 (누구나)</text>
+    <text x="427" y="225" fill="var(--dg-red,#e74c3c)" font-size="12">개인키 (수신자만)</text>
+    <text x="320" y="277" fill="var(--dg-muted,#8b96ab)" font-size="12">느림·알고리즘 복잡 · 키 관리 용이 — "DES는 대칭, RSA는 공개키" 함정 빈출</text>
   </g>
   <defs>
-    <marker id="c1" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#2ecc71"/></marker>
-    <marker id="c2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#4f8cff"/></marker>
-    <marker id="c3" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#e74c3c"/></marker>
+    <marker id="c1" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--dg-green,#2ecc71)"/></marker>
+    <marker id="c2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--dg-accent,#4f8cff)"/></marker>
+    <marker id="c3" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--dg-red,#e74c3c)"/></marker>
   </defs>
 </svg>

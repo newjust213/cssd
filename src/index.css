@@ -9,6 +9,23 @@
   --red: #e74c3c;
   --flash-back: #1d2a45;
   --diagram-bg: #232e45;
+  /* SVG 도해 토큰 (인라인 SVG에 전파) */
+  --dg-bg: #1a2233;
+  --dg-text: #e8ecf4;
+  --dg-text2: #cdd8ee;
+  --dg-muted: #8b96ab;
+  --dg-toa: #fff;
+  --dg-toa2: #dce8ff;
+  --dg-accent: #4f8cff;
+  --dg-accent-fill: #4f8cff;
+  --dg-fill: #31549e;
+  --dg-fill2: #3f6fd0;
+  --dg-panel: #232e45;
+  --dg-panel2: #1a2233;
+  --dg-dark: #0f1420;
+  --dg-stroke: #3a4a6b;
+  --dg-green: #2ecc71;
+  --dg-red: #e74c3c;
   color-scheme: dark;
 }
 
@@ -22,7 +39,24 @@
   --green: #1a9e55;
   --red: #d6452e;
   --flash-back: #dbe5f5;
-  --diagram-bg: #1a2233; /* SVG 도해는 다크 팔레트로 그려져 있어 배경 유지 */
+  --diagram-bg: #1a2233;
+  /* SVG 도해 라이트 팔레트: 박스는 파스텔, 글자는 어둡게, 선은 채도 유지 */
+  --dg-bg: #ffffff;
+  --dg-text: #1c2333;
+  --dg-text2: #3a4a66;
+  --dg-muted: #5d6a85;
+  --dg-toa: #14203a;
+  --dg-toa2: #2c3d63;
+  --dg-accent: #2f6fe0;
+  --dg-accent-fill: #b9cff2;
+  --dg-fill: #cddcf5;
+  --dg-fill2: #c2d4f1;
+  --dg-panel: #eaeff7;
+  --dg-panel2: #f5f8fd;
+  --dg-dark: #dde5f1;
+  --dg-stroke: #9fb0cc;
+  --dg-green: #189a53;
+  --dg-red: #d2402a;
   color-scheme: light;
 }
 
@@ -144,5 +178,6 @@ select {
 .points li { font-size: 14px; line-height: 1.7; padding: 3px 0; color: var(--text); }
 
 .diagram { margin: 14px 0 4px; }
-.diagram img { display: block; width: 100%; background: var(--diagram-bg); border-radius: 10px; padding: 8px; }
+.diagram-svg { background: var(--dg-bg); border-radius: 10px; padding: 8px; }
+.diagram-svg svg { display: block; width: 100%; height: auto; }
 .diagram figcaption { text-align: center; color: var(--muted); font-size: 12px; margin-top: 6px; }

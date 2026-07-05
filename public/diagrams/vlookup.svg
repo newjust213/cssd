@@ -1,36 +1,36 @@
 <svg viewBox="0 0 640 290" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
   <g font-size="13" text-anchor="middle">
-    <text x="235" y="30" fill="#e8ecf4" font-family="monospace" font-size="15">=VLOOKUP("B02", A2:C5, 3, FALSE)</text>
-    <g fill="#31549e"><rect x="120" y="50" width="80" height="36"/><rect x="200" y="50" width="80" height="36"/><rect x="280" y="50" width="80" height="36"/></g>
-    <g fill="#e8ecf4" font-weight="bold"><text x="160" y="73">코드</text><text x="240" y="73">상품명</text><text x="320" y="73">단가</text></g>
-    <g fill="#232e45">
+    <text x="235" y="30" fill="var(--dg-text,#e8ecf4)" font-family="monospace" font-size="15">=VLOOKUP("B02", A2:C5, 3, FALSE)</text>
+    <g fill="var(--dg-fill,#31549e)"><rect x="120" y="50" width="80" height="36"/><rect x="200" y="50" width="80" height="36"/><rect x="280" y="50" width="80" height="36"/></g>
+    <g fill="var(--dg-text,#e8ecf4)" font-weight="bold"><text x="160" y="73">코드</text><text x="240" y="73">상품명</text><text x="320" y="73">단가</text></g>
+    <g fill="var(--dg-panel,#232e45)">
       <rect x="120" y="86" width="80" height="36"/><rect x="200" y="86" width="80" height="36"/><rect x="280" y="86" width="80" height="36"/>
       <rect x="120" y="158" width="80" height="36"/><rect x="200" y="158" width="80" height="36"/><rect x="280" y="158" width="80" height="36"/>
     </g>
-    <g fill="#1a2233">
-      <rect x="120" y="122" width="80" height="36" stroke="#2ecc71" stroke-width="2"/>
+    <g fill="var(--dg-panel2,#1a2233)">
+      <rect x="120" y="122" width="80" height="36" stroke="var(--dg-green,#2ecc71)" stroke-width="2"/>
       <rect x="200" y="122" width="80" height="36"/>
-      <rect x="280" y="122" width="80" height="36" stroke="#e74c3c" stroke-width="2"/>
+      <rect x="280" y="122" width="80" height="36" stroke="var(--dg-red,#e74c3c)" stroke-width="2"/>
     </g>
-    <g fill="#cdd8ee">
+    <g fill="var(--dg-text2,#cdd8ee)">
       <text x="160" y="109">A01</text><text x="240" y="109">키보드</text><text x="320" y="109">25,000</text>
-      <text x="160" y="145" fill="#2ecc71" font-weight="bold">B02</text><text x="240" y="145">마우스</text><text x="320" y="145" fill="#e74c3c" font-weight="bold">18,000</text>
+      <text x="160" y="145" fill="var(--dg-green,#2ecc71)" font-weight="bold">B02</text><text x="240" y="145">마우스</text><text x="320" y="145" fill="var(--dg-red,#e74c3c)" font-weight="bold">18,000</text>
       <text x="160" y="181">C03</text><text x="240" y="181">모니터</text><text x="320" y="181">210,000</text>
     </g>
-    <path d="M60,140 L116,140" stroke="#2ecc71" stroke-width="2" marker-end="url(#v1)"/>
-    <text x="58" y="128" fill="#2ecc71" font-size="12" text-anchor="end">① 첫 열에서</text>
-    <text x="58" y="144" fill="#2ecc71" font-size="12" text-anchor="end">검색</text>
-    <path d="M364,140 L430,140" stroke="#e74c3c" stroke-width="2" marker-end="url(#v2)"/>
-    <text x="440" y="136" fill="#e74c3c" font-size="12" text-anchor="start">② 3번째 열 값 반환</text>
-    <text x="440" y="152" fill="#8b96ab" font-size="11" text-anchor="start">FALSE = 정확히 일치</text>
-    <g fill="#8b96ab" font-size="12" text-anchor="start">
+    <path d="M60,140 L116,140" stroke="var(--dg-green,#2ecc71)" stroke-width="2" marker-end="url(#v1)"/>
+    <text x="58" y="128" fill="var(--dg-green,#2ecc71)" font-size="12" text-anchor="end">① 첫 열에서</text>
+    <text x="58" y="144" fill="var(--dg-green,#2ecc71)" font-size="12" text-anchor="end">검색</text>
+    <path d="M364,140 L430,140" stroke="var(--dg-red,#e74c3c)" stroke-width="2" marker-end="url(#v2)"/>
+    <text x="440" y="136" fill="var(--dg-red,#e74c3c)" font-size="12" text-anchor="start">② 3번째 열 값 반환</text>
+    <text x="440" y="152" fill="var(--dg-muted,#8b96ab)" font-size="11" text-anchor="start">FALSE = 정확히 일치</text>
+    <g fill="var(--dg-muted,#8b96ab)" font-size="12" text-anchor="start">
       <text x="60" y="230">· 찾을값은 반드시 범위의 첫 열 → 왼쪽 열 반환 불가</text>
       <text x="60" y="250">· 왼쪽 반환이 필요하면: =INDEX(반환범위, MATCH(찾을값, 검색범위, 0)) 또는 XLOOKUP</text>
       <text x="60" y="270">· TRUE/생략 = 근사값(첫 열 오름차순 정렬 필요) — 함정 빈출</text>
     </g>
   </g>
   <defs>
-    <marker id="v1" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#2ecc71"/></marker>
-    <marker id="v2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#e74c3c"/></marker>
+    <marker id="v1" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--dg-green,#2ecc71)"/></marker>
+    <marker id="v2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--dg-red,#e74c3c)"/></marker>
   </defs>
 </svg>

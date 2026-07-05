@@ -1,15 +1,15 @@
 <svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
   <g font-size="13">
-    <g fill="#232e45" stroke="#3a4a6b">
-      <rect x="60" y="15"  width="300" height="40" rx="8" fill="#31549e"/>
+    <g fill="var(--dg-panel,#232e45)" stroke="var(--dg-stroke,#3a4a6b)">
+      <rect x="60" y="15"  width="300" height="40" rx="8" fill="var(--dg-fill,#31549e)"/>
       <rect x="60" y="61"  width="300" height="40" rx="8"/>
       <rect x="60" y="107" width="300" height="40" rx="8"/>
-      <rect x="60" y="153" width="300" height="40" rx="8" fill="#31549e"/>
+      <rect x="60" y="153" width="300" height="40" rx="8" fill="var(--dg-fill,#31549e)"/>
       <rect x="60" y="199" width="300" height="40" rx="8"/>
       <rect x="60" y="245" width="300" height="40" rx="8"/>
       <rect x="60" y="291" width="300" height="40" rx="8"/>
     </g>
-    <g fill="#e8ecf4">
+    <g fill="var(--dg-text,#e8ecf4)">
       <text x="80" y="40">7. 응용 (HTTP·FTP·SMTP)</text>
       <text x="80" y="86">6. 표현 (암호화·압축·형식 변환)</text>
       <text x="80" y="132">5. 세션 (대화 연결 관리)</text>
@@ -18,18 +18,18 @@
       <text x="80" y="270">2. 데이터링크 (흐름·오류 제어, MAC)</text>
       <text x="80" y="316">1. 물리 (전기 신호·케이블)</text>
     </g>
-    <g fill="#2ecc71">
+    <g fill="var(--dg-green,#2ecc71)">
       <text x="400" y="224">라우터</text>
       <text x="400" y="270">브리지 · 스위치</text>
       <text x="400" y="316">리피터 · 허브</text>
     </g>
-    <g stroke="#2ecc71" stroke-width="1.5">
+    <g stroke="var(--dg-green,#2ecc71)" stroke-width="1.5">
       <path d="M360,219 L395,219"/><path d="M360,265 L395,265"/><path d="M360,311 L395,311"/>
     </g>
-    <path d="M530,20 L530,326" stroke="#e74c3c" stroke-width="1.5"/>
-    <path d="M523,20 L537,20 M523,326 L537,326" stroke="#e74c3c" stroke-width="1.5"/>
-    <text x="548" y="170" fill="#e74c3c">게이트웨이</text>
-    <text x="548" y="188" fill="#8b96ab" font-size="11">전 계층·프로토콜 변환</text>
-    <text x="30" y="180" fill="#8b96ab" font-size="11" text-anchor="middle" transform="rotate(-90 30 180)">암기: 물·데·네·전·세·표·응</text>
+    <path d="M530,20 L530,326" stroke="var(--dg-red,#e74c3c)" stroke-width="1.5"/>
+    <path d="M523,20 L537,20 M523,326 L537,326" stroke="var(--dg-red,#e74c3c)" stroke-width="1.5"/>
+    <text x="548" y="170" fill="var(--dg-red,#e74c3c)">게이트웨이</text>
+    <text x="548" y="188" fill="var(--dg-muted,#8b96ab)" font-size="11">전 계층·프로토콜 변환</text>
+    <text x="30" y="180" fill="var(--dg-muted,#8b96ab)" font-size="11" text-anchor="middle" transform="rotate(-90 30 180)">암기: 물·데·네·전·세·표·응</text>
   </g>
 </svg>

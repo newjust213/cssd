@@ -1,28 +1,28 @@
 <svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
   <g font-size="13" text-anchor="middle">
-    <text x="300" y="28" fill="#e8ecf4" font-weight="bold" font-size="15">릴레이션(테이블) 〈학생〉</text>
-    <g fill="#31549e">
+    <text x="300" y="28" fill="var(--dg-text,#e8ecf4)" font-weight="bold" font-size="15">릴레이션(테이블) 〈학생〉</text>
+    <g fill="var(--dg-fill,#31549e)">
       <rect x="120" y="45" width="120" height="36"/><rect x="240" y="45" width="120" height="36"/><rect x="360" y="45" width="120" height="36"/>
     </g>
-    <g fill="#e8ecf4" font-weight="bold"><text x="180" y="68">학번</text><text x="300" y="68">이름</text><text x="420" y="68">학과</text></g>
-    <g fill="#232e45">
+    <g fill="var(--dg-text,#e8ecf4)" font-weight="bold"><text x="180" y="68">학번</text><text x="300" y="68">이름</text><text x="420" y="68">학과</text></g>
+    <g fill="var(--dg-panel,#232e45)">
       <rect x="120" y="81" width="120" height="36"/><rect x="240" y="81" width="120" height="36"/><rect x="360" y="81" width="120" height="36"/>
       <rect x="120" y="153" width="120" height="36"/><rect x="240" y="153" width="120" height="36"/><rect x="360" y="153" width="120" height="36"/>
     </g>
-    <g fill="#1a2233">
+    <g fill="var(--dg-panel2,#1a2233)">
       <rect x="120" y="117" width="120" height="36"/><rect x="240" y="117" width="120" height="36"/><rect x="360" y="117" width="120" height="36"/>
     </g>
-    <g fill="#cdd8ee">
+    <g fill="var(--dg-text2,#cdd8ee)">
       <text x="180" y="104">1001</text><text x="300" y="104">김민준</text><text x="420" y="104">경영</text>
       <text x="180" y="140">1002</text><text x="300" y="140">이서연</text><text x="420" y="140">전산</text>
       <text x="180" y="176">1003</text><text x="300" y="176">박지호</text><text x="420" y="176">전산</text>
     </g>
-    <path d="M120,190 L480,190" stroke="#2ecc71" stroke-width="0" fill="none"/>
-    <rect x="118" y="115" width="364" height="40" fill="none" stroke="#e74c3c" stroke-width="2" rx="4"/>
-    <text x="530" y="140" fill="#e74c3c" font-size="12" text-anchor="start">튜플(행)</text>
-    <rect x="238" y="43" width="124" height="148" fill="none" stroke="#2ecc71" stroke-width="2" rx="4"/>
-    <text x="300" y="212" fill="#2ecc71" font-size="12">속성(열) · 도메인 = 값의 범위</text>
-    <g fill="#8b96ab" font-size="13" text-anchor="start">
+    <path d="M120,190 L480,190" stroke="var(--dg-green,#2ecc71)" stroke-width="0" fill="none"/>
+    <rect x="118" y="115" width="364" height="40" fill="none" stroke="var(--dg-red,#e74c3c)" stroke-width="2" rx="4"/>
+    <text x="530" y="140" fill="var(--dg-red,#e74c3c)" font-size="12" text-anchor="start">튜플(행)</text>
+    <rect x="238" y="43" width="124" height="148" fill="none" stroke="var(--dg-green,#2ecc71)" stroke-width="2" rx="4"/>
+    <text x="300" y="212" fill="var(--dg-green,#2ecc71)" font-size="12">속성(열) · 도메인 = 값의 범위</text>
+    <g fill="var(--dg-muted,#8b96ab)" font-size="13" text-anchor="start">
       <text x="80" y="245">차수(Degree) = 속성 개수 = 3</text>
       <text x="340" y="245">기수(Cardinality) = 튜플 개수 = 3</text>
       <text x="80" y="268">튜플 중복 불가 · 튜플/속성 순서는 무의미 · 속성값은 원자값</text>
