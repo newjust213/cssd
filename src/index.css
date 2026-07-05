@@ -103,3 +103,8 @@ select {
   width: 100%; background: var(--panel2); color: var(--text);
   border: 0; border-radius: 10px; padding: 10px; font-size: 14px; font-family: inherit;
 }
+
+.qfig {
+  display: block; max-width: 100%; margin: 10px auto;
+  background: #fff; border-radius: 8px; padding: 4px;
+}

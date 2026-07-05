@@ -28,7 +28,7 @@ export default function Quiz() {
   const [source, setSource] = useState('전체')
   const [count, setCount] = useState(20)
   const [wrongOnly, setWrongOnly] = useState(false)
-  const [skipImage, setSkipImage] = useState(true)
+  const [skipImage, setSkipImage] = useState(false)
   const [queue, setQueue] = useState([])
   const [idx, setIdx] = useState(0)
   const [picked, setPicked] = useState(null)
@@ -133,7 +133,7 @@ export default function Quiz() {
         </div>
         <label className="check">
           <input type="checkbox" checked={skipImage} onChange={(e) => setSkipImage(e.target.checked)} />
-          그림/표 지문 문항 제외 (지문 이미지 미지원)
+          그림/표 지문 문항 제외
         </label>
         <label className="check">
           <input type="checkbox" checked={wrongOnly} onChange={(e) => setWrongOnly(e.target.checked)} />
@@ -160,6 +160,9 @@ export default function Quiz() {
           <div className="card" key={q.id}>
             <p className="subject">{q.subject} · {q.source || '샘플'}</p>
             <p><strong>{q.question}</strong></p>
+            {(q.images || []).map((f) => (
+              <img key={f} className="qfig" src={`${import.meta.env.BASE_URL}figures/${f}`} alt="문항 그림" />
+            ))}
             <ol className="choices-static">
               {q.choices.map((c, i) => (
                 <li key={i} className={i === q.answer ? 'answer' : ''}>{c}</li>
@@ -197,8 +200,13 @@ export default function Quiz() {
         <span className="subject">{q.subject} · {q.source || '샘플'}</span>
         <span className="timer">{String(Math.floor(elapsed / 60)).padStart(2, '0')}:{String(elapsed % 60).padStart(2, '0')}</span>
       </div>
-      {q.hasImage && <p className="note">⚠ 그림/표 지문 문항 — 원본 PDF 참조 필요</p>}
       <p className="question">{q.question}</p>
+      {(q.images || []).map((f) => (
+        <img key={f} className="qfig" src={`${import.meta.env.BASE_URL}figures/${f}`} alt="문항 그림" />
+      ))}
+      {q.hasImage && !(q.images || []).length && (
+        <p className="note">⚠ 그림/표 지문 문항 — 원본 PDF 참조 필요</p>
+      )}
       <div className="choices">
         {q.choices.map((c, i) => {
           let cls = 'choice'
