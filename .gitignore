@@ -2,3 +2,6 @@ node_modules/
 dist/
 .DS_Store
 *.local
+
+# 시나공 저작물 기반 파싱 산출물 — 개인 학습용, 공개 리포에 커밋 금지
+src/data/quiz-bank.json
