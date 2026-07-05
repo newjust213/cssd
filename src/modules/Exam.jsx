@@ -2,6 +2,50 @@ import { useEffect, useRef, useState } from 'react'
 import { useProgress } from '../useProgress'
 import { update } from '../store'
 
+// 실기 문제 파일 매니페스트 (scripts/build_practice_manifest.py 생성물, git 미포함)
+// 파일이 없으면 링크 섹션은 표시되지 않는다.
+const pm = import.meta.glob('../data/practice-manifest.json', { eager: true })
+const practiceSets = Object.values(pm).flatMap((m) => m.default ?? [])
+
+function FileLink({ f }) {
+  const url =
+    import.meta.env.BASE_URL +
+    'practice/' +
+    f.rel.split('/').map(encodeURIComponent).join('/')
+  const isPdf = f.name.toLowerCase().endsWith('.pdf')
+  return (
+    <div className="file-row">
+      <span className="fname">{f.name}</span>
+      {isPdf ? (
+        <a className="link" href={url} target="_blank" rel="noreferrer">PDF 보기</a>
+      ) : (
+        <a className="link" href={url} download>다운로드</a>
+      )}
+    </div>
+  )
+}
+
+function PracticeSets({ group, heading, note }) {
+  const sets = practiceSets.filter((s) => s.group === group)
+  if (sets.length === 0) return null
+  return (
+    <div className="card">
+      <h2>{heading}</h2>
+      {note && <p className="note">{note}</p>}
+      {sets.map((s) => (
+        <details className="fileset" key={s.title}>
+          <summary>
+            {s.title} <span className="note">{s.files.length}개 파일</span>
+          </summary>
+          {s.files.map((f) => (
+            <FileLink key={f.rel} f={f} />
+          ))}
+        </details>
+      ))}
+    </div>
+  )
+}
+
 const PARTS = [
   { name: '엑셀', secs: 45 * 60 },
   { name: 'Access', secs: 45 * 60 },
@@ -165,15 +209,21 @@ export default function Exam() {
       <div className="card center">
         <h2>실전 모의고사</h2>
         <p className="note">엑셀 45분 + Access 45분. 합격 기준: 두 프로그램 각각 70점 이상.</p>
-        <p className="note">
-          문제 세트: 프로젝트 폴더 <b>실기문제/</b> — 기출 6회분(문제 PDF + 작업파일 + 정답)과
-          유형별 연습 7종. 타이머 시작 후 작업파일을 열고 진행하세요.
-        </p>
         <div className="row">
           <button className="primary" onClick={() => startPart(0)}>1교시 엑셀 시작 (45:00)</button>
           <button className="ghost" onClick={() => startPart(1)}>Access만 (45:00)</button>
         </div>
       </div>
+      <PracticeSets
+        group="기출"
+        heading="실전 기출 세트"
+        note="문제 PDF는 바로 보기, 작업파일(.xlsm/.accdb)은 다운로드 후 풀이 → 정답 파일로 자가 채점. 구 정기시험 기출이므로 손순서·시간 감각 훈련용."
+      />
+      <PracticeSets
+        group="연습"
+        heading="엑셀 계산작업 유형별 연습"
+        note="문제 PDF + 실습 파일 + 정답. 2주차 3~4일차와 연계."
+      />
       <div className="card">
         <h2>회차 기록 ({exams.length})</h2>
         {exams.length === 0 && <p className="note">아직 기록이 없습니다. 4주차에 최소 4회를 목표로.</p>}
