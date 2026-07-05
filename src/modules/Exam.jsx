@@ -165,6 +165,10 @@ export default function Exam() {
       <div className="card center">
         <h2>실전 모의고사</h2>
         <p className="note">엑셀 45분 + Access 45분. 합격 기준: 두 프로그램 각각 70점 이상.</p>
+        <p className="note">
+          문제 세트: 프로젝트 폴더 <b>실기문제/</b> — 기출 6회분(문제 PDF + 작업파일 + 정답)과
+          유형별 연습 7종. 타이머 시작 후 작업파일을 열고 진행하세요.
+        </p>
         <div className="row">
           <button className="primary" onClick={() => startPart(0)}>1교시 엑셀 시작 (45:00)</button>
           <button className="ghost" onClick={() => startPart(1)}>Access만 (45:00)</button>
