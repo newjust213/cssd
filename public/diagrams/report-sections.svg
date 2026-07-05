@@ -1,0 +1,32 @@
+<svg viewBox="0 0 640 340" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <g font-size="13">
+    <text x="320" y="24" fill="var(--dg-text,#e8ecf4)" font-weight="bold" font-size="15" text-anchor="middle">보고서 구역 — 어디에 몇 번 인쇄되는가</text>
+    <g stroke="var(--dg-stroke,#3a4a6b)">
+      <rect x="30" y="38"  width="420" height="38" rx="6" fill="var(--dg-fill,#31549e)"/>
+      <rect x="30" y="80"  width="420" height="38" rx="6" fill="var(--dg-panel,#232e45)"/>
+      <rect x="30" y="122" width="420" height="38" rx="6" fill="var(--dg-accent-fill,#4f8cff)"/>
+      <rect x="30" y="164" width="420" height="38" rx="6" fill="var(--dg-panel2,#1a2233)"/>
+      <rect x="30" y="206" width="420" height="38" rx="6" fill="var(--dg-accent-fill,#4f8cff)"/>
+      <rect x="30" y="248" width="420" height="38" rx="6" fill="var(--dg-panel,#232e45)"/>
+      <rect x="30" y="290" width="420" height="38" rx="6" fill="var(--dg-fill,#31549e)"/>
+    </g>
+    <g fill="var(--dg-text,#e8ecf4)">
+      <text x="45" y="62">보고서 머리글 — 제목, 발행일</text>
+      <text x="45" y="104">페이지 머리글 — 열 제목(레이블)</text>
+      <text x="45" y="146" fill="var(--dg-toa,#fff)">그룹 머리글 — 그룹명 (반복 실행 구역 속성)</text>
+      <text x="45" y="188">본문 — 레코드 데이터</text>
+      <text x="45" y="230" fill="var(--dg-toa,#fff)">그룹 바닥글 — 그룹별 집계 =Sum([필드])</text>
+      <text x="45" y="272">페이지 바닥글 — =[Page] &amp; "/" &amp; [Pages]</text>
+      <text x="45" y="314">보고서 바닥글 — 전체 총계</text>
+    </g>
+    <g font-size="12" text-anchor="start">
+      <text x="470" y="62" fill="var(--dg-green,#2ecc71)">첫 페이지 1회</text>
+      <text x="470" y="104" fill="var(--dg-accent,#4f8cff)">매 페이지</text>
+      <text x="470" y="146" fill="var(--dg-red,#e74c3c)">그룹 시작마다</text>
+      <text x="470" y="188" fill="var(--dg-muted,#8b96ab)">레코드마다</text>
+      <text x="470" y="230" fill="var(--dg-red,#e74c3c)">그룹 끝마다</text>
+      <text x="470" y="272" fill="var(--dg-accent,#4f8cff)">매 페이지</text>
+      <text x="470" y="314" fill="var(--dg-green,#2ecc71)">마지막 1회</text>
+    </g>
+  </g>
+</svg>

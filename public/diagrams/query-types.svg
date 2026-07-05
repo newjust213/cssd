@@ -1,0 +1,37 @@
+<svg viewBox="0 0 640 350" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <g font-size="13">
+    <text x="320" y="26" fill="var(--dg-text,#e8ecf4)" font-weight="bold" font-size="15" text-anchor="middle">지문 키워드 → 쿼리 유형 선택 (처리 기능 35점의 첫 단계)</text>
+    <g fill="var(--dg-panel,#232e45)">
+      <rect x="20" y="42" width="600" height="44" rx="8"/>
+      <rect x="20" y="92" width="600" height="44" rx="8"/>
+      <rect x="20" y="142" width="600" height="44" rx="8"/>
+      <rect x="20" y="192" width="600" height="44" rx="8"/>
+      <rect x="20" y="242" width="600" height="44" rx="8"/>
+      <rect x="20" y="292" width="600" height="44" rx="8"/>
+    </g>
+    <g fill="var(--dg-text2,#cdd8ee)" font-size="12">
+      <text x="35" y="61">"~별 합계·평균·개수를 조회"</text>
+      <text x="35" y="111">"행 머리글·열 머리글로 교차 집계"</text>
+      <text x="35" y="161">"실행할 때마다 값을 입력받아 조회"</text>
+      <text x="35" y="211">"조건에 맞는 레코드의 값을 ~로 변경"</text>
+      <text x="35" y="261">"조회 결과를 새/다른 테이블에 생성·추가·삭제"</text>
+      <text x="35" y="311">"~에 존재하지 않는(등록되지 않은) 레코드"</text>
+    </g>
+    <g font-weight="bold">
+      <text x="360" y="61" fill="var(--dg-green,#2ecc71)">요약(집계) 쿼리</text>
+      <text x="360" y="111" fill="var(--dg-accent,#4f8cff)">크로스탭 쿼리</text>
+      <text x="360" y="161" fill="var(--dg-green,#2ecc71)">매개 변수 쿼리</text>
+      <text x="360" y="211" fill="var(--dg-red,#e74c3c)">업데이트 쿼리</text>
+      <text x="360" y="261" fill="var(--dg-red,#e74c3c)">테이블 만들기·추가·삭제</text>
+      <text x="360" y="311" fill="var(--dg-accent,#4f8cff)">불일치 검색 쿼리</text>
+    </g>
+    <g fill="var(--dg-muted,#8b96ab)" font-size="11">
+      <text x="35" y="78">리본 Σ · 묶는 방법/Sum/Avg/Count · 조건 필드는 표시 해제</text>
+      <text x="35" y="128">행 여러 개 가능 · 열 머리글은 1개만 · 값은 집계 함수</text>
+      <text x="35" y="178">조건란에 [안내문] · Like "*" &amp; [입력] &amp; "*" 부분 일치</text>
+      <text x="35" y="228">업데이트 행에 식 입력 (예: [급여]*1.1) · 실행(!) 필요 · 취소 불가</text>
+      <text x="35" y="278">실행 쿼리 4종은 되돌릴 수 없음 — 실행 전 데이터시트 보기로 확인</text>
+      <text x="35" y="328">LEFT JOIN + 오른쪽 키 Is Null · 마법사 사용 가능</text>
+    </g>
+  </g>
+</svg>

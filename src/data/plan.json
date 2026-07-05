@@ -32,13 +32,13 @@
     "title": "Access 집중",
     "note": "쿼리가 합격을 가른다. 조건식·집계·매개변수·조인·실행쿼리 유형을 따로 묶어 연습.",
     "tasks": [
-      { "id": "w3t1", "label": "1일차 · 테이블 + 관계 설정" },
-      { "id": "w3t2", "label": "2일차 · 쿼리 ① 조건식/집계/매개변수" },
-      { "id": "w3t3", "label": "3일차 · 쿼리 ② 조인/업데이트/추가/삭제" },
-      { "id": "w3t4", "label": "4일차 · 폼 (컨트롤 속성·이벤트)" },
-      { "id": "w3t5", "label": "5일차 · 보고서 (그룹화·정렬·속성)" },
-      { "id": "w3t6", "label": "6일차 · 매크로 + 처리 기능" },
-      { "id": "w3t7", "label": "7일차 · Access 파트 통합 연습 1회분" }
+      { "id": "w3t1", "label": "1일차 · 테이블 + 관계 설정", "concept": "Access 실기", "goto": "proc" },
+      { "id": "w3t2", "label": "2일차 · 쿼리 ① 조건식/집계/매개변수", "concept": "Access 실기", "goto": "cards" },
+      { "id": "w3t3", "label": "3일차 · 쿼리 ② 조인/업데이트/추가/삭제", "concept": "Access 실기", "goto": "cards" },
+      { "id": "w3t4", "label": "4일차 · 폼 (컨트롤 속성·이벤트)", "concept": "Access 실기" },
+      { "id": "w3t5", "label": "5일차 · 보고서 (그룹화·정렬·속성)", "concept": "Access 실기", "goto": "proc" },
+      { "id": "w3t6", "label": "6일차 · 매크로 + 처리 기능", "concept": "Access 실기" },
+      { "id": "w3t7", "label": "7일차 · Access 파트 통합 연습 1회분", "goto": "proc" }
     ]
   },
   {

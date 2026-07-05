@@ -1,0 +1,32 @@
+<svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <g font-size="13">
+    <rect x="20" y="20" width="360" height="260" rx="10" fill="none" stroke="var(--dg-accent,#4f8cff)" stroke-width="2"/>
+    <text x="200" y="14" fill="var(--dg-accent,#4f8cff)" font-size="12" text-anchor="middle">폼 — 레코드 원본: 테이블·쿼리·SQL</text>
+    <rect x="30" y="30" width="340" height="40" rx="6" fill="var(--dg-fill,#31549e)"/>
+    <text x="200" y="55" fill="var(--dg-text,#e8ecf4)" text-anchor="middle" font-weight="bold">폼 머리글 — 제목 레이블</text>
+    <rect x="30" y="78" width="340" height="130" rx="6" fill="var(--dg-panel,#232e45)"/>
+    <text x="200" y="100" fill="var(--dg-text,#e8ecf4)" text-anchor="middle" font-weight="bold">본문 (연속 폼이면 레코드마다 반복)</text>
+    <rect x="45" y="112" width="140" height="30" rx="4" fill="var(--dg-panel2,#1a2233)" stroke="var(--dg-stroke,#3a4a6b)"/>
+    <text x="115" y="131" fill="var(--dg-text2,#cdd8ee)" text-anchor="middle" font-size="11">텍스트 상자</text>
+    <text x="200" y="131" fill="var(--dg-green,#2ecc71)" font-size="11">← 컨트롤 원본 = 필드명</text>
+    <rect x="45" y="152" width="140" height="30" rx="4" fill="var(--dg-panel2,#1a2233)" stroke="var(--dg-stroke,#3a4a6b)"/>
+    <text x="115" y="171" fill="var(--dg-text2,#cdd8ee)" text-anchor="middle" font-size="11">콤보 상자</text>
+    <text x="200" y="171" fill="var(--dg-green,#2ecc71)" font-size="11">← 행 원본(RowSource)</text>
+    <rect x="30" y="216" width="340" height="54" rx="6" fill="var(--dg-fill,#31549e)"/>
+    <text x="200" y="238" fill="var(--dg-text,#e8ecf4)" text-anchor="middle" font-weight="bold">폼 바닥글 — 집계 컨트롤</text>
+    <text x="200" y="258" fill="var(--dg-text2,#cdd8ee)" text-anchor="middle" font-family="monospace" font-size="12">=Count(*) &amp; "건"  /  =Avg([급여])</text>
+    <g fill="var(--dg-muted,#8b96ab)" font-size="12" text-anchor="start">
+      <text x="400" y="40" fill="var(--dg-text,#e8ecf4)" font-weight="bold">빈출 폼 속성</text>
+      <text x="400" y="64">· 기본 보기: 단일/연속/데이터시트</text>
+      <text x="400" y="86">· 레코드 선택기 / 탐색 단추</text>
+      <text x="400" y="108">· 추가·삭제·편집 가능 (예/아니요)</text>
+      <text x="400" y="130">· 팝업 / 모달</text>
+      <text x="400" y="152">· 탭 순서 · 탭 정지</text>
+      <text x="400" y="182" fill="var(--dg-text,#e8ecf4)" font-weight="bold">하위 폼 (1:N의 N쪽)</text>
+      <text x="400" y="206">· 기본 필드 연결 = 부모 키</text>
+      <text x="400" y="228">· 하위 필드 연결 = 자식 키</text>
+      <text x="400" y="258">· 계산 컨트롤은 = 로 시작,</text>
+      <text x="400" y="276">  테이블에 저장되지 않음</text>
+    </g>
+  </g>
+</svg>
