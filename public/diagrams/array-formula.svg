@@ -1,0 +1,20 @@
+<svg viewBox="0 0 640 270" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <g font-size="13">
+    <text x="320" y="28" fill="var(--dg-text,#e8ecf4)" font-weight="bold" font-size="15" text-anchor="middle">배열 수식 3대 패턴 — Ctrl+Shift+Enter로 입력하면 { }가 자동으로 붙는다</text>
+    <g fill="var(--dg-panel,#232e45)">
+      <rect x="20" y="45" width="600" height="52" rx="10"/>
+      <rect x="20" y="105" width="600" height="52" rx="10"/>
+      <rect x="20" y="165" width="600" height="52" rx="10"/>
+    </g>
+    <text x="35" y="67" fill="var(--dg-green,#2ecc71)" font-weight="bold">개수</text>
+    <text x="35" y="86" fill="var(--dg-text2,#cdd8ee)" font-family="monospace" font-size="14">{=SUM((지역="서울")*(점수&gt;=90))}</text>
+    <text x="440" y="86" fill="var(--dg-muted,#8b96ab)" font-size="11">조건이 모두 참이면 1×1</text>
+    <text x="35" y="127" fill="var(--dg-accent,#4f8cff)" font-weight="bold">합계</text>
+    <text x="35" y="146" fill="var(--dg-text2,#cdd8ee)" font-family="monospace" font-size="14">{=SUM((지역="서울")*(점수&gt;=90)*매출)}</text>
+    <text x="440" y="146" fill="var(--dg-muted,#8b96ab)" font-size="11">조건 × 합계범위</text>
+    <text x="35" y="187" fill="var(--dg-red,#e74c3c)" font-weight="bold">최대/평균</text>
+    <text x="35" y="206" fill="var(--dg-text2,#cdd8ee)" font-family="monospace" font-size="14">{=MAX(IF((지역="서울")*(점수&gt;=90), 매출))}</text>
+    <text x="440" y="206" fill="var(--dg-muted,#8b96ab)" font-size="11">MAX·MIN·AVERAGE는 IF 필요</text>
+    <text x="320" y="245" fill="var(--dg-muted,#8b96ab)" font-size="12" text-anchor="middle">AND 조건 = 곱(*) · OR 조건 = 합(+) — 문제의 "그리고/이거나"를 연산자로 번역하는 것이 핵심</text>
+  </g>
+</svg>

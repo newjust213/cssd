@@ -1,0 +1,46 @@
+<svg viewBox="0 0 640 330" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <g font-size="13">
+    <text x="320" y="26" fill="var(--dg-text,#e8ecf4)" font-weight="bold" font-size="15" text-anchor="middle">무엇을 보여주려는가 → 차트 선택</text>
+    <g fill="var(--dg-panel,#232e45)">
+      <rect x="20" y="45" width="600" height="42" rx="8"/>
+      <rect x="20" y="93" width="600" height="42" rx="8"/>
+      <rect x="20" y="141" width="600" height="42" rx="8"/>
+      <rect x="20" y="189" width="600" height="42" rx="8"/>
+      <rect x="20" y="237" width="600" height="42" rx="8"/>
+    </g>
+    <!-- 막대 아이콘 -->
+    <g fill="var(--dg-accent,#4f8cff)">
+      <rect x="35" y="66" width="7" height="14"/><rect x="46" y="58" width="7" height="22"/><rect x="57" y="52" width="7" height="28"/>
+    </g>
+    <text x="80" y="63" fill="var(--dg-text,#e8ecf4)" font-weight="bold">항목 간 크기 비교</text>
+    <text x="80" y="80" fill="var(--dg-muted,#8b96ab)" font-size="11">세로/가로 막대형 · 누적형은 합계+구성</text>
+    <text x="420" y="71" fill="var(--dg-text2,#cdd8ee)" font-size="12">지점별 매출 비교</text>
+    <!-- 꺾은선 아이콘 -->
+    <path d="M35,128 L48,116 L58,122 L70,108" stroke="var(--dg-green,#2ecc71)" stroke-width="2.5" fill="none"/>
+    <text x="80" y="111" fill="var(--dg-text,#e8ecf4)" font-weight="bold">시간 흐름·추세</text>
+    <text x="80" y="128" fill="var(--dg-muted,#8b96ab)" font-size="11">꺾은선형 · 추세선 추가 가능</text>
+    <text x="420" y="119" fill="var(--dg-text2,#cdd8ee)" font-size="12">월별 판매 추이</text>
+    <!-- 원형 아이콘 -->
+    <circle cx="50" cy="162" r="14" fill="var(--dg-red,#e74c3c)"/>
+    <path d="M50,162 L50,148 A14,14 0 0 1 62,155 z" fill="var(--dg-toa2,#dce8ff)"/>
+    <text x="80" y="159" fill="var(--dg-text,#e8ecf4)" font-weight="bold">전체 대비 구성 비율</text>
+    <text x="80" y="176" fill="var(--dg-muted,#8b96ab)" font-size="11">원형(계열 1개, 축 없음) · 도넛형(다중 계열)</text>
+    <text x="420" y="167" fill="var(--dg-text2,#cdd8ee)" font-size="12">부서별 예산 비중 · 쪼개기/첫 조각 각 편집</text>
+    <!-- 분산 아이콘 -->
+    <g fill="var(--dg-accent,#4f8cff)">
+      <circle cx="38" cy="222" r="3"/><circle cx="50" cy="212" r="3"/><circle cx="58" cy="218" r="3"/><circle cx="66" cy="205" r="3"/>
+    </g>
+    <text x="80" y="207" fill="var(--dg-text,#e8ecf4)" font-weight="bold">두 값의 상관관계</text>
+    <text x="80" y="224" fill="var(--dg-muted,#8b96ab)" font-size="11">분산형(XY) · 거품형은 +크기 3번째 값</text>
+    <text x="420" y="215" fill="var(--dg-text2,#cdd8ee)" font-size="12">키-몸무게, 과학 데이터</text>
+    <!-- 콤보 아이콘 -->
+    <g>
+      <rect x="35" y="262" width="7" height="14" fill="var(--dg-accent,#4f8cff)"/><rect x="46" y="256" width="7" height="20" fill="var(--dg-accent,#4f8cff)"/>
+      <path d="M35,258 L58,250 L70,254" stroke="var(--dg-red,#e74c3c)" stroke-width="2" fill="none"/>
+    </g>
+    <text x="80" y="255" fill="var(--dg-text,#e8ecf4)" font-weight="bold">단위가 다른 두 계열</text>
+    <text x="80" y="272" fill="var(--dg-muted,#8b96ab)" font-size="11">혼합(콤보) + 보조 축 — 2차원끼리만 가능</text>
+    <text x="420" y="263" fill="var(--dg-text2,#cdd8ee)" font-size="12">매출(막대)+증감률(꺾은선)</text>
+    <text x="320" y="313" fill="var(--dg-muted,#8b96ab)" font-size="12" text-anchor="middle">추세선 불가: 원형·도넛·방사형·표면형·3차원 / F11=새 시트, Alt+F1=현재 시트</text>
+  </g>
+</svg>

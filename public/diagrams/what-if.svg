@@ -1,0 +1,28 @@
+<svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <g font-size="13" text-anchor="middle">
+    <text x="320" y="26" fill="var(--dg-text,#e8ecf4)" font-weight="bold" font-size="15">가상 분석 도구 선택 — 문제 지문의 키워드로 판단</text>
+    <g fill="var(--dg-panel,#232e45)" stroke="var(--dg-stroke,#3a4a6b)">
+      <rect x="20" y="45" width="295" height="110" rx="10"/>
+      <rect x="325" y="45" width="295" height="110" rx="10"/>
+      <rect x="20" y="165" width="295" height="110" rx="10"/>
+      <rect x="325" y="165" width="295" height="110" rx="10"/>
+    </g>
+    <text x="167" y="70" fill="var(--dg-green,#2ecc71)" font-weight="bold">목표값 찾기</text>
+    <text x="167" y="92" fill="var(--dg-text2,#cdd8ee)" font-size="12">"결과가 ~이 되려면 …은 얼마여야"</text>
+    <text x="167" y="112" fill="var(--dg-muted,#8b96ab)" font-size="11">수식 셀 · 찾는 값 · 값을 바꿀 셀(1개)</text>
+    <text x="167" y="132" fill="var(--dg-muted,#8b96ab)" font-size="11">변경 셀은 반드시 1개, 상수 입력 셀</text>
+    <text x="472" y="70" fill="var(--dg-accent,#4f8cff)" font-weight="bold">데이터 표</text>
+    <text x="472" y="92" fill="var(--dg-text2,#cdd8ee)" font-size="12">"~의 변동에 따른 결과를 표로"</text>
+    <text x="472" y="112" fill="var(--dg-muted,#8b96ab)" font-size="11">행/열 입력 셀 지정 (변수 1~2개)</text>
+    <text x="472" y="132" fill="var(--dg-muted,#8b96ab)" font-size="11">결과 일부만 수정·삭제 불가</text>
+    <text x="167" y="190" fill="var(--dg-red,#e74c3c)" font-weight="bold">시나리오</text>
+    <text x="167" y="212" fill="var(--dg-text2,#cdd8ee)" font-size="12">"~일 경우들을 저장하고 요약 보고서"</text>
+    <text x="167" y="232" fill="var(--dg-muted,#8b96ab)" font-size="11">변경 셀 최대 32개 · 이름 필수</text>
+    <text x="167" y="252" fill="var(--dg-muted,#8b96ab)" font-size="11">요약 시 결과 셀 지정</text>
+    <text x="472" y="190" fill="var(--dg-text,#e8ecf4)" font-weight="bold">해 찾기</text>
+    <text x="472" y="212" fill="var(--dg-text2,#cdd8ee)" font-size="12">"제한 조건 하에 최대/최소/특정값"</text>
+    <text x="472" y="232" fill="var(--dg-muted,#8b96ab)" font-size="11">목표 셀 · 변수 셀 여러 개 · 제한 조건</text>
+    <text x="472" y="252" fill="var(--dg-muted,#8b96ab)" font-size="11">추가 기능(애드인)으로 설치</text>
+    <text x="320" y="292" fill="var(--dg-muted,#8b96ab)" font-size="12">변수 1개 역산=목표값 · 변화표=데이터표 · 조합 저장=시나리오 · 제약조건 최적화=해 찾기</text>
+  </g>
+</svg>

@@ -90,7 +90,7 @@ export default function App() {
         ))}
       </nav>
       <main>
-        {tab === 'plan' && <Plan onOpenConcepts={openConcepts} onOpenQuiz={openQuiz} />}
+        {tab === 'plan' && <Plan onOpenConcepts={openConcepts} onOpenQuiz={openQuiz} onOpenTab={setTab} />}
         {tab === 'concepts' && <Concepts subject={conceptSubject} onSubjectChange={setConceptSubject} />}
         {tab === 'quiz' && <Quiz key={quizNav.key} initialMode={quizNav.view} />}
         {tab === 'cards' && <Cards />}

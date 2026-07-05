@@ -5,9 +5,11 @@ import { update } from '../store'
 const GOTO_LABEL = {
   quiz: 'CBT 풀이 →',
   'quiz-wrong': '오답노트 →',
+  cards: '암기카드 →',
+  proc: '손순서 →',
 }
 
-export default function Plan({ onOpenConcepts, onOpenQuiz }) {
+export default function Plan({ onOpenConcepts, onOpenQuiz, onOpenTab }) {
   const progress = useProgress()
   const total = plan.reduce((n, w) => n + w.tasks.length, 0)
   const done = plan.reduce((n, w) => n + w.tasks.filter((t) => progress.plan[t.id]).length, 0)
@@ -54,7 +56,11 @@ export default function Plan({ onOpenConcepts, onOpenQuiz }) {
                   {t.goto && (
                     <button
                       className="link"
-                      onClick={() => onOpenQuiz(t.goto === 'quiz-wrong' ? 'wrong' : 'setup')}
+                      onClick={() =>
+                        t.goto.startsWith('quiz')
+                          ? onOpenQuiz(t.goto === 'quiz-wrong' ? 'wrong' : 'setup')
+                          : onOpenTab(t.goto)
+                      }
                     >
                       {GOTO_LABEL[t.goto]}
                     </button>
