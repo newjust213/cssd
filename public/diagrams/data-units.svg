@@ -1,0 +1,29 @@
+<svg viewBox="0 0 640 150" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <g font-size="13" text-anchor="middle">
+    <g fill="#232e45" stroke="#3a4a6b">
+      <rect x="10" y="40" width="64" height="44" rx="8"/>
+      <rect x="90" y="40" width="64" height="44" rx="8"/>
+      <rect x="170" y="40" width="64" height="44" rx="8"/>
+      <rect x="250" y="40" width="64" height="44" rx="8"/>
+      <rect x="330" y="40" width="64" height="44" rx="8"/>
+      <rect x="410" y="40" width="64" height="44" rx="8"/>
+      <rect x="490" y="40" width="64" height="44" rx="8"/>
+      <rect x="570" y="40" width="64" height="44" rx="8" fill="#31549e"/>
+    </g>
+    <g fill="#e8ecf4">
+      <text x="42" y="59">비트</text><text x="42" y="76" font-size="10" fill="#8b96ab">최소 단위</text>
+      <text x="122" y="59">니블</text><text x="122" y="76" font-size="10" fill="#8b96ab">4bit</text>
+      <text x="202" y="59">바이트</text><text x="202" y="76" font-size="10" fill="#8b96ab">8bit·문자</text>
+      <text x="282" y="59">워드</text><text x="282" y="76" font-size="10" fill="#8b96ab">연산 단위</text>
+      <text x="362" y="59">필드</text><text x="362" y="76" font-size="10" fill="#8b96ab">항목</text>
+      <text x="442" y="59">레코드</text><text x="442" y="76" font-size="10" fill="#8b96ab">처리 단위</text>
+      <text x="522" y="59">파일</text><text x="522" y="76" font-size="10" fill="#8b96ab">레코드 집합</text>
+      <text x="602" y="59">DB</text><text x="602" y="76" font-size="10" fill="#cdd8ee">파일 통합</text>
+    </g>
+    <g fill="#4f8cff" font-size="15" font-weight="bold">
+      <text x="82" y="66">&lt;</text><text x="162" y="66">&lt;</text><text x="242" y="66">&lt;</text>
+      <text x="322" y="66">&lt;</text><text x="402" y="66">&lt;</text><text x="482" y="66">&lt;</text><text x="562" y="66">&lt;</text>
+    </g>
+    <text x="320" y="120" fill="#8b96ab" font-size="12">작다 ——— 자료 크기 순서 (빈출: 순서 바꿔치기 함정) ——— 크다</text>
+  </g>
+</svg>

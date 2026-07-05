@@ -1,0 +1,36 @@
+<svg viewBox="0 0 640 170" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <g font-size="13" text-anchor="middle">
+    <g fill="#232e45" stroke="#3a4a6b">
+      <rect x="15" y="50" width="95" height="50" rx="8"/>
+      <rect x="150" y="50" width="95" height="50" rx="8" fill="#31549e"/>
+      <rect x="285" y="50" width="95" height="50" rx="8" fill="#31549e"/>
+      <rect x="420" y="50" width="95" height="50" rx="8" fill="#31549e"/>
+      <rect x="545" y="50" width="85" height="50" rx="8" fill="#4f8cff"/>
+    </g>
+    <g fill="#e8ecf4" font-weight="bold">
+      <text x="62" y="80">비정규</text>
+      <text x="197" y="80">1NF</text>
+      <text x="332" y="80">2NF</text>
+      <text x="467" y="80">3NF</text>
+      <text x="587" y="80">BCNF</text>
+    </g>
+    <g stroke="#2ecc71" stroke-width="2">
+      <path d="M110,75 L150,75" marker-end="url(#n)"/>
+      <path d="M245,75 L285,75" marker-end="url(#n)"/>
+      <path d="M380,75 L420,75" marker-end="url(#n)"/>
+      <path d="M515,75 L545,75" marker-end="url(#n)"/>
+    </g>
+    <g fill="#2ecc71" font-size="11">
+      <text x="130" y="40">원자값</text>
+      <text x="265" y="40">부분 종속 제거</text>
+      <text x="400" y="40">이행 종속 제거</text>
+      <text x="532" y="40">결정자=후보키</text>
+    </g>
+    <g fill="#8b96ab" font-size="11">
+      <text x="265" y="125">(기본키 전체에 완전 종속)</text>
+      <text x="400" y="125">(A→B, B→C 이면 A→C 제거)</text>
+    </g>
+    <text x="320" y="155" fill="#8b96ab" font-size="12">목적: 중복 제거·이상 현상 방지 (조회 속도 향상 아님) · 과도한 정규화 → 조인 증가로 성능 저하</text>
+  </g>
+  <defs><marker id="n" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#2ecc71"/></marker></defs>
+</svg>

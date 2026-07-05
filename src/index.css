@@ -125,3 +125,7 @@ select {
 .check-inline { display: flex; gap: 6px; align-items: center; font-size: 12px; color: var(--muted); cursor: pointer; }
 .points { margin: 12px 0 0; padding-left: 18px; }
 .points li { font-size: 14px; line-height: 1.7; padding: 3px 0; color: var(--text); }
+
+.diagram { margin: 14px 0 4px; }
+.diagram img { display: block; width: 100%; background: var(--panel2); border-radius: 10px; padding: 8px; }
+.diagram figcaption { text-align: center; color: var(--muted); font-size: 12px; margin-top: 6px; }

@@ -1,0 +1,34 @@
+<svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <rect x="20" y="20" width="400" height="260" rx="12" fill="none" stroke="#4f8cff" stroke-width="2"/>
+  <text x="220" y="48" text-anchor="middle" fill="#4f8cff" font-size="16" font-weight="bold">CPU (중앙처리장치)</text>
+  <g font-size="13">
+    <rect x="40" y="65" width="175" height="195" rx="10" fill="#232e45"/>
+    <text x="127" y="90" text-anchor="middle" fill="#e8ecf4" font-weight="bold">제어장치</text>
+    <g fill="#cdd8ee">
+      <text x="52" y="118">· PC 프로그램 카운터</text>
+      <text x="62" y="134" font-size="11" fill="#8b96ab">다음 명령 주소</text>
+      <text x="52" y="158">· IR 명령 레지스터</text>
+      <text x="62" y="174" font-size="11" fill="#8b96ab">현재 실행 명령</text>
+      <text x="52" y="198">· 명령 해독기</text>
+      <text x="52" y="222">· 부호기</text>
+    </g>
+    <rect x="228" y="65" width="175" height="195" rx="10" fill="#232e45"/>
+    <text x="315" y="90" text-anchor="middle" fill="#e8ecf4" font-weight="bold">연산장치(ALU)</text>
+    <g fill="#cdd8ee">
+      <text x="240" y="118">· ACC 누산기</text>
+      <text x="250" y="134" font-size="11" fill="#8b96ab">연산 결과 임시 저장</text>
+      <text x="240" y="158">· 가산기</text>
+      <text x="240" y="182">· 보수기</text>
+      <text x="240" y="206">· 상태 레지스터</text>
+    </g>
+  </g>
+  <rect x="480" y="90" width="140" height="120" rx="10" fill="#31549e"/>
+  <text x="550" y="140" text-anchor="middle" fill="#e8ecf4" font-size="14" font-weight="bold">주기억장치</text>
+  <text x="550" y="162" text-anchor="middle" fill="#cdd8ee" font-size="12">RAM · ROM</text>
+  <g stroke="#8b96ab" stroke-width="2">
+    <path d="M420,130 L480,130" marker-end="url(#m)"/>
+    <path d="M480,170 L420,170" marker-end="url(#m)"/>
+  </g>
+  <text x="450" y="118" text-anchor="middle" fill="#8b96ab" font-size="11">버스</text>
+  <defs><marker id="m" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#8b96ab"/></marker></defs>
+</svg>

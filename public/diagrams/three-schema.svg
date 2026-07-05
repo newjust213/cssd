@@ -1,0 +1,33 @@
+<svg viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <g font-size="13" text-anchor="middle">
+    <g fill="#232e45" stroke="#3a4a6b">
+      <rect x="60" y="20" width="120" height="40" rx="8"/>
+      <rect x="260" y="20" width="120" height="40" rx="8"/>
+      <rect x="460" y="20" width="120" height="40" rx="8"/>
+    </g>
+    <g fill="#cdd8ee"><text x="120" y="45">사용자 A</text><text x="320" y="45">사용자 B</text><text x="520" y="45">응용 프로그램</text></g>
+    <g fill="#31549e">
+      <rect x="60" y="90" width="120" height="40" rx="8"/>
+      <rect x="260" y="90" width="120" height="40" rx="8"/>
+      <rect x="460" y="90" width="120" height="40" rx="8"/>
+    </g>
+    <g fill="#e8ecf4"><text x="120" y="115">외부 스키마</text><text x="320" y="115">외부 스키마</text><text x="520" y="115">외부 스키마</text></g>
+    <text x="608" y="115" fill="#8b96ab" font-size="11" text-anchor="start"></text>
+    <rect x="170" y="170" width="300" height="46" rx="8" fill="#4f8cff"/>
+    <text x="320" y="192" fill="#fff" font-weight="bold">개념 스키마 (전체 논리 구조 · 1개)</text>
+    <text x="320" y="208" fill="#dce8ff" font-size="11">개체·관계·제약조건·무결성 정의</text>
+    <rect x="170" y="240" width="300" height="46" rx="8" fill="#232e45" stroke="#3a4a6b"/>
+    <text x="320" y="262" fill="#e8ecf4" font-weight="bold">내부 스키마 (물리적 저장 구조)</text>
+    <text x="320" y="278" fill="#8b96ab" font-size="11">저장 레코드 형식·인덱스·접근 경로</text>
+    <g stroke="#8b96ab" stroke-width="1.5">
+      <path d="M120,60 L120,90"/><path d="M320,60 L320,90"/><path d="M520,60 L520,90"/>
+      <path d="M120,130 L270,170"/><path d="M320,130 L320,170"/><path d="M520,130 L370,170"/>
+      <path d="M320,216 L320,240"/>
+    </g>
+    <g fill="#2ecc71" font-size="11" text-anchor="start">
+      <text x="480" y="160">↕ 논리적 독립성</text>
+      <text x="480" y="233">↕ 물리적 독립성</text>
+    </g>
+    <text x="320" y="310" fill="#8b96ab" font-size="12">사용자 관점(여러 개) → 전체 설계(1개) → 저장 방식(1개)</text>
+  </g>
+</svg>

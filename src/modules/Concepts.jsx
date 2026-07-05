@@ -48,6 +48,12 @@ export default function Concepts({ subject, onSubjectChange }) {
               읽음
             </label>
           </summary>
+          {(sec.images || []).map((im) => (
+            <figure className="diagram" key={im.file}>
+              <img src={`${import.meta.env.BASE_URL}diagrams/${im.file}`} alt={im.caption} />
+              <figcaption>{im.caption}</figcaption>
+            </figure>
+          ))}
           <ul className="points">
             {sec.points.map((pt, j) => (
               <li key={j}>{pt}</li>

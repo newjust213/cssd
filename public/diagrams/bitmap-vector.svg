@@ -1,0 +1,23 @@
+<svg viewBox="0 0 640 240" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <g text-anchor="middle" font-size="14">
+    <rect x="20" y="20" width="290" height="200" rx="12" fill="#232e45"/>
+    <text x="165" y="48" fill="#e74c3c" font-weight="bold">비트맵 (래스터)</text>
+    <g fill="#4f8cff">
+      <rect x="115" y="70" width="20" height="20"/><rect x="135" y="70" width="20" height="20"/><rect x="155" y="70" width="20" height="20"/>
+      <rect x="95" y="90" width="20" height="20"/><rect x="175" y="90" width="20" height="20"/>
+      <rect x="95" y="110" width="20" height="20"/><rect x="175" y="110" width="20" height="20"/>
+      <rect x="115" y="130" width="20" height="20"/><rect x="135" y="130" width="20" height="20"/><rect x="155" y="130" width="20" height="20"/>
+    </g>
+    <g fill="#cdd8ee" font-size="11">
+      <text x="165" y="175">픽셀 단위 · 확대 시 계단 현상</text>
+      <text x="165" y="193">사실적 표현 · BMP JPG GIF PNG</text>
+    </g>
+    <rect x="330" y="20" width="290" height="200" rx="12" fill="#232e45"/>
+    <text x="475" y="48" fill="#2ecc71" font-weight="bold">벡터</text>
+    <circle cx="475" cy="110" r="45" fill="none" stroke="#4f8cff" stroke-width="4"/>
+    <g fill="#cdd8ee" font-size="11">
+      <text x="475" y="175">수학적 계산(점·선·면) · 확대해도 매끄러움</text>
+      <text x="475" y="193">용량 작음 · AI WMF</text>
+    </g>
+  </g>
+</svg>
