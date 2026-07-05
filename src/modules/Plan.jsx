@@ -2,7 +2,12 @@ import plan from '../data/plan.json'
 import { useProgress } from '../useProgress'
 import { update } from '../store'
 
-export default function Plan({ onOpenConcepts }) {
+const GOTO_LABEL = {
+  quiz: 'CBT 풀이 →',
+  'quiz-wrong': '오답노트 →',
+}
+
+export default function Plan({ onOpenConcepts, onOpenQuiz }) {
   const progress = useProgress()
   const total = plan.reduce((n, w) => n + w.tasks.length, 0)
   const done = plan.reduce((n, w) => n + w.tasks.filter((t) => progress.plan[t.id]).length, 0)
@@ -44,6 +49,14 @@ export default function Plan({ onOpenConcepts }) {
                   {t.concept && (
                     <button className="link" onClick={() => onOpenConcepts(t.concept)}>
                       개념 보기 →
+                    </button>
+                  )}
+                  {t.goto && (
+                    <button
+                      className="link"
+                      onClick={() => onOpenQuiz(t.goto === 'quiz-wrong' ? 'wrong' : 'setup')}
+                    >
+                      {GOTO_LABEL[t.goto]}
                     </button>
                   )}
                 </li>

@@ -21,9 +21,9 @@ function shuffle(arr) {
   return a
 }
 
-export default function Quiz() {
+export default function Quiz({ initialMode = 'setup' }) {
   const progress = useProgress()
-  const [mode, setMode] = useState('setup') // setup | run | result | wrong
+  const [mode, setMode] = useState(initialMode) // setup | run | result | wrong
   const [subject, setSubject] = useState('전체')
   const [source, setSource] = useState('전체')
   const [count, setCount] = useState(20)

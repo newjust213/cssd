@@ -26,6 +26,7 @@ export default function App() {
   const [conceptSubject, setConceptSubject] = useState('컴퓨터 일반')
   const [user, setUser] = useState(null)
   const [theme, setTheme] = useState(initTheme)
+  const [quizNav, setQuizNav] = useState({ view: 'setup', key: 0 })
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme
@@ -35,6 +36,11 @@ export default function App() {
   function openConcepts(subject) {
     setConceptSubject(subject)
     setTab('concepts')
+  }
+
+  function openQuiz(view) {
+    setQuizNav((q) => ({ view, key: q.key + 1 })) // key 변경으로 Quiz 재마운트
+    setTab('quiz')
   }
 
   useEffect(() => {
@@ -74,15 +80,19 @@ export default function App() {
       </header>
       <nav>
         {TABS.map(([key, label]) => (
-          <button key={key} className={tab === key ? 'active' : ''} onClick={() => setTab(key)}>
+          <button
+            key={key}
+            className={tab === key ? 'active' : ''}
+            onClick={() => (key === 'quiz' ? openQuiz('setup') : setTab(key))}
+          >
             {label}
           </button>
         ))}
       </nav>
       <main>
-        {tab === 'plan' && <Plan onOpenConcepts={openConcepts} />}
+        {tab === 'plan' && <Plan onOpenConcepts={openConcepts} onOpenQuiz={openQuiz} />}
         {tab === 'concepts' && <Concepts subject={conceptSubject} onSubjectChange={setConceptSubject} />}
-        {tab === 'quiz' && <Quiz />}
+        {tab === 'quiz' && <Quiz key={quizNav.key} initialMode={quizNav.view} />}
         {tab === 'cards' && <Cards />}
         {tab === 'proc' && <Procedures />}
       </main>
